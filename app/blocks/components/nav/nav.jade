@@ -1,0 +1,7 @@
+mixin nav(classMod)
+  nav(class='nav nav--' + classMod)
+    ul.nav_list
+    - var linkList = [{title: 'Главная', src: 'index.html'}, {title: 'Услуги', src: 'services.html'}, {title: 'О салоне', src: 'about.html'}, {title: 'Прайс', src: 'price.html'}, {title: 'Контакты', src: 'contact.html'}];
+      each item in linkList
+        li.nav_list-item
+          a(href=item.src) #{item.title}

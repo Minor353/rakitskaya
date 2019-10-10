@@ -1,6 +1,14 @@
 extends /blocks/layout-default/layout-default
 
 block head
-	- var pageTitle = 'CSSSR Project Template';
+	- var pageTitle = 'Rakitskaya || Главная';
 
 block content
+	include ../blocks/components/header/header
+	main
+		.wrapper
+			include ../blocks/components/prev-section/prev-section
+			+prev-section('index')
+			include ../blocks/components/about-prev/about-prev
+			+about-prev('index')
+	include ../blocks/components/footer/footer
