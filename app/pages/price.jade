@@ -7,4 +7,14 @@ block content
 	include ../blocks/components/header/header
 	main
 		.wrapper
+			include ../blocks/components/price-description/price-description
+			+price-description('price')
+			include ../blocks/components/masters/masters
+			+masters('price')
+			include ../blocks/components/reviews/reviews
+			+reviews('price')
+			include ../blocks/components/main-form/main-form
+			+main-form('price')
+			include ../blocks/components/instagram/instagram
+			+instagram('price')
 	include ../blocks/components/footer/footer

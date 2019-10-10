@@ -1,0 +1,13 @@
+mixin main-form(positionClass)
+  section(class="main-form main-form--#{positionClass}")
+    .main-form_wrap
+      h2.main-form_title
+      .main-form_subtitle
+      form(action="#", method="post").main-form_form
+        label.main-form_form-label
+          .main-form_label-text Как к Вам можно обращаться
+          input(type="text" placeholder="Ваше имя").main-form_form-input
+        label.main-form_form-label
+          .main-form_label-text Оставьте свой номер телефона для связи
+          input(type="text" placeholder="+380 (__) ___ __ __").main-form_form-input
+        button(type="submit").main-form_btn Отправить

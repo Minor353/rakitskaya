@@ -1,0 +1,10 @@
+.tabs-table
+  ul.tabs-table_tabs
+    - var tabsList = ['Косметология','Стилист','Массаж','Ногтевой сервис','Beauty face'];
+      each item in tabsList
+        li.tabs-table_tabs-item= item
+  ul.tabs-table_content
+    li.tabs-table_content-item
+      include ../table-list/table-list
+  include ../button/button
+  +button('red', 'Забронировать', '#')

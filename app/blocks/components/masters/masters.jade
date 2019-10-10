@@ -1,0 +1,12 @@
+mixin masters(positionClass)
+  section(class="masters masters--#{positionClass}")
+    .masters_wrap
+      h2.masters_title Наши мастера
+      .masters_text Помимо процедур Вы всегда можете выбрать специалиста, когторый Вас обслужит. Если мастеров мало (одна процедура - один мастер) и выбирать не из кого - этот блок скрывается или удаляется. Необходимо выбрать.
+      .masters_cards
+        .masters_cards-title Главные специалисты
+        ul.masters_cards-list
+          - for (var i = 0; i < 5; i++) {
+            li.masters_list-item
+              include ../master-card/master-card
+          - }

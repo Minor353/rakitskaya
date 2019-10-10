@@ -1,0 +1,11 @@
+mixin advantages(positionClass)
+  section(class="advantages advantages--#{positionClass}")
+    .advantages_wrap 
+      h2.advantages_title Почему вы можете полностью доверить нам самое важное — себя
+      ul.advantages_list
+        - for (var i = 0; i<4; i++) {
+          li.advantages_list-item
+            include ../advantages-card/advantages-card
+        - }
+      .advantages_img
+        img(src="#", alt="advantages")

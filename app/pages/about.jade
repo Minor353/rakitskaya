@@ -7,4 +7,16 @@ block content
 	include ../blocks/components/header/header
 	main
 		.wrapper
+			include ../blocks/components/page-description/page-description
+			+page-description('about')
+			include ../blocks/components/about-main/about-main
+			+about-main('about')
+			include ../blocks/components/advantages/advantages
+			+advantages('about')
+			include ../blocks/components/reviews/reviews
+			+reviews('about')
+			include ../blocks/components/main-form/main-form
+			+main-form('about')
+			include ../blocks/components/instagram/instagram
+			+instagram('about')
 	include ../blocks/components/footer/footer

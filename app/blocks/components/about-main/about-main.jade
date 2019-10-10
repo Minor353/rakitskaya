@@ -1,0 +1,16 @@
+mixin about-main(positionClass)
+  section(class="about-main about-main--#{positionClass}")
+    .about-main_wrap
+      .about-main_content
+        .about-main_content-img
+          img(src="#", alt="image")
+        .about-main_content-description
+          h2.about-main_description-title салон красоты
+          .about-main_description-text Образцовое обслуживание, непревзойденный сервис, лучшие продукты и оборудование на рынке - это стандарты нашего салона, которые непосредственно отражают личные ценности и нрав Елены Ракицкой - это дух искренней и внимательной заботы о своем клиенте. Мы полны решимости предоставить наилучший сервис по доступной цене. Мы понимаем людей, которые сталкиваются с финансовыми трудностями в наши дни, и прилагаем все усилия.
+      .about-main_slider
+        ul.about-main_slider-list
+          - for (var i = 0; i < 3; i++) {
+            li.about-main_list-item
+              img(src="#", alt="slide")
+          - }
+                    

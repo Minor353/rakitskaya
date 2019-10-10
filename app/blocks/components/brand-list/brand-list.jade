@@ -1,0 +1,9 @@
+mixin brand-list(positionClass)
+  section(class="brand-list brand-list--#{positionClass}")
+    .brand-list_wrap
+      h2.brand-list_title У нас вы можете купить средства по уходу за волосами и телом этих марок
+      ul.brand-list_list
+        - for (var i = 0; i<12; i++) {
+          li.brand-list_list-item
+            include ../brand-card/brand-card
+        - }

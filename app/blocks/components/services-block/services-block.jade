@@ -1,0 +1,9 @@
+mixin services-block(positionClass)
+  section(class="services-block services-block--#{positionClass }")
+    .services-block_wrap
+      h2.services-block_title Услуги
+      ul.services-block_list
+        - for (var i = 0; i<5; i++) {
+          li.services-block_list-item
+            include ../service-card/service-card
+        - }

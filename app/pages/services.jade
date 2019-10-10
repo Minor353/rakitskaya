@@ -7,4 +7,10 @@ block content
 	include ../blocks/components/header/header
 	main
 		.wrapper
-	include ../blocks/components/footer/footer
+			include ../blocks/components/services-block/services-block
+			+services-block('services')
+			include ../blocks/components/brand-list/brand-list
+			+brand-list('services')
+			include ../blocks/components/advantages/advantages
+			+advantages('services')
+	include ../blocks/components/footer/footer 
