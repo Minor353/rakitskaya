@@ -1,0 +1,18 @@
+extends /blocks/layout-default/layout-default
+
+block head
+	- var pageTitle = 'Rakitskaya || Категории';
+
+block content
+	include ../blocks/components/header/header
+	main
+		.wrapper
+			include ../blocks/components/title-block/title-block
+			+title-block('category')
+			include ../blocks/components/category-layout/category-layout
+			+category-layout('category')
+			include ../blocks/components/main-form/main-form
+			+main-form('category')
+			include ../blocks/components/instagram/instagram
+			+instagram('category')
+	include ../blocks/components/footer/footer

@@ -1,0 +1,10 @@
+mixin title-block(positionClass)
+  section(class="title-block title-block--#{positionClass}")
+    .title-block_wrap
+      .title-block_content
+        h2.title-block_title Косметология
+        p.title-block_text Наши лицензированные косметологи имеют многолетний опыт работы и стремятся идти в ногу с последними тенденциями. Производим полный спектр косметологических процедур с использованием современного оборудования MedicaLaser!
+        include ../button/button
+        +button('white', 'Записаться', '#')
+      .title-block_img
+        img(src="#", alt="title image")

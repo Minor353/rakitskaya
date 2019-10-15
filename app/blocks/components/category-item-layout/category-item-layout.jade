@@ -1,0 +1,14 @@
+mixin category-item-layout(positionClass)
+  section(class="category-item-layout category-item-layout--#{positionClass}")
+    .category-item-layout_wrap
+      .category-item-layout_description
+        .category-item-layout_description-content
+          h2.category-item-layout_description-title Все виды пилинга
+          p.category-item-layout_description-text Для механического отшелушивания применяют скрабы, содержащие измельчённую миндальную скорлупу, сахарные или солевые кристаллы, пемзу и абразивные материалы (люфа). Такие скрабы общедоступны, продаются в розницу и могут использоваться в домашних условиях. Для химического отшелушивания применяют специальные пилинговые растворы, содержащие салициловую кислоту, гликолевую кислоту, пировиноградную кислоту, растительные ферменты (протеазы), лимонную кислоту или яблочную кислоту в различных концентрациях. Слабоконцентрированные пилинги могут использоваться в домашних условиях. Пилинги с помощью растворов, содержащих высокие концентрации активных веществ, проводятся только в салонах и центрах красоты профессиональными дерматологами.
+        .category-item-layout_description-img
+          img(src="#", alt="image")
+      ul.category-item-layout_list
+        - for (var i = 0; i < 2; i++) {
+            li.category-item-layout_list-item
+              include ../category-item-card/category-item-card
+        - }

@@ -1,0 +1,16 @@
+extends /blocks/layout-default/layout-default
+
+block head
+	- var pageTitle = 'Rakitskaya || Услуга';
+
+block content
+	include ../blocks/components/header/header
+	main
+		.wrapper
+			include ../blocks/components/item-service-layout/item-service-layout
+			+item-service-layout('item-service')
+			include ../blocks/components/main-form/main-form
+			+main-form('item-service')
+			include ../blocks/components/instagram/instagram
+			+instagram('item-service')
+	include ../blocks/components/footer/footer

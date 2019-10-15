@@ -1,0 +1,7 @@
+.category-item
+  .category-item_title Тело
+  ul.category-item_list
+    - for (var x = 0; x < 5; x++) {
+      li.category-item_list-item
+        include ../category-card/category-card
+    - }

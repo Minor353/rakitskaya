@@ -1,0 +1,9 @@
+mixin category-layout(positionClass)
+  section(class="category-layout category-layout--#{positionClass}")
+    .category-layout_wrap
+      .category-layout_title Виды косметологии
+      ul.category-layout_list
+        - for (var i = 0; i < 3; i++) {
+          li.category-layout_list-item
+            include ../category-item/category-item
+        - }

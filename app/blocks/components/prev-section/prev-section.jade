@@ -1,13 +1,13 @@
 mixin prev-section(positionClass)
   div(class="prev-section prev-section--#{positionClass}")
     include ../social/social
-    ul.prev-section_slider
-      li.prev-section_slider-item
-        img(src="#", alt="slide")  
+    .prev-section_slider
+      img(src="#", alt="slide").prev-section_slider-item
     .prev-section_wrap
-      .prev-section_title
-        div Салон красоты
-        div Елены Ракицкой
-      .prev-section_btn
-        include ../button/button
-        +button('red', 'Записаться', '#')
+      .prev-section_content
+        .prev-section_title
+          div Салон красоты
+          div Елены Ракицкой
+        .prev-section_btn
+          include ../button/button
+          +button('red', 'Записаться', '#')

@@ -1,0 +1,42 @@
+.social
+  position: absolute
+  left 100px
+  top: 50%
+  transform: translateY(-50%)
+
+.social_list 
+  padding: 0
+  margin: 0
+  &-item
+    list-style-type: none
+  &-item:first-child
+    margin-bottom: 45px
+
+.social_item-link
+  text-decoration: none
+  font-size: 16px
+  line-height: 19px
+  color: #ffffff
+  display: flex
+  flex-direction: column
+  align-items: center
+  transition: 0.3s
+
+.social_link-icon
+  width: 28px
+  height: 28px
+  margin-bottom: 20px
+  svg 
+    width: 100%
+    height 100%
+    fill: #fff
+    transition: 0.3s
+
+.social_link-text
+  writing-mode: tb-rl
+  transform: rotate(180deg)
+
+.social_item-link:hover
+  color: #C6373B
+  svg
+    fill: #C6373B 
