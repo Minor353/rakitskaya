@@ -2,7 +2,7 @@ mixin prev-section(positionClass)
   div(class="prev-section prev-section--#{positionClass}")
     include ../social/social
     .prev-section_slider
-      img(src="#", alt="slide").prev-section_slider-item
+      img(src="images/main-slide.png", alt="slide").prev-section_slider-item
     .prev-section_wrap
       .prev-section_content
         .prev-section_title
@@ -10,4 +10,4 @@ mixin prev-section(positionClass)
           div Елены Ракицкой
         .prev-section_btn
           include ../button/button
-          +button('red', 'Записаться', '#')
+          +button('white', 'Записаться', '#')

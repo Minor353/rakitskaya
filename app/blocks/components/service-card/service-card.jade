@@ -1,10 +1,11 @@
 .service-card
   .service-card_img
-    img(src="#", alt="service")
+    img(src="images/limpieza-facial-1024x683.png", alt="service")
   ul.service-card_content
     li.service-card_content-icon
-      img(src="#", alt="icon")
+      .service-card_content-icon-wrap
+        +icon('mask', true).service-card_icon-svg
     li.service-card_content-title Косметология
     li.service-card_content-text Лучшая косметика и заботливые руки
-    li.service-card_content-link
-      a(href="services-category.html") Подробнее
+    li.service-card_content-item
+      a(href="services-category.html").service-card_content-link Подробнее
