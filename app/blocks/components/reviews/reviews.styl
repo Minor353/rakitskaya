@@ -6,6 +6,23 @@
   max-width: 1170px
   padding: 0 15px
   margin: 0 auto
+  position: relative
+  .slick-arrow
+    position: absolute
+    top: 50%
+    font-size: 0
+    width: 30px
+    height: 30px
+    background-color: transparent
+    border: none
+    border-left: 2px solid #A4A7AD
+    border-bottom: 2px solid #A4A7AD
+  .slick-prev
+    left: -80px
+    transform: translateY(-50%) rotate(45deg)
+  .slick-next
+    right: -80px
+    transform: translateY(-50%) rotate(-135deg)
 
 .reviews_title
   font-size: 66px
@@ -17,6 +34,9 @@
   margin-bottom: 88px
 
 .reviews_slider-item
+  padding: 0 15px
+
+.reviews_slider-item-content
   background: #FFFFFF
   border: 1px solid #F2F2F2
   box-sizing: border-box

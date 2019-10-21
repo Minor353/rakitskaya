@@ -16,33 +16,43 @@ const isDebug = process.env.NODE_ENV !== 'production';
 
 gulp.task('styles', () => (
 	gulp.src('app/styles/*.styl')
-		.pipe(plumber({errorHandler: errorHandler(`Error in \'styles\' task`)}))
-		.pipe(gulpIf(isDebug, sourcemaps.init()))
-		.pipe(stylus({
-			use: [
-				importIfExist(),
-				rupture(),
-				autoprefixer()
-			],
-			'include css': true,
-			define: {
-				// dev-mode variable for using in stylus
-				'__DEV__': isDebug
-			}
-		}))
-		.pipe(gulpIf(!isDebug, gcmq()))
-		.pipe(gulpIf(!isDebug, nano({zindex: false})))
-		.pipe(rename({suffix: '.min'}))
-		.pipe(gulpIf(isDebug, sourcemaps.write()))
-		.pipe(gulp.dest('dist/assets/styles'))
+	.pipe(plumber({
+		errorHandler: errorHandler(`Error in \'styles\' task`)
+	}))
+	.pipe(gulpIf(isDebug, sourcemaps.init()))
+	.pipe(stylus({
+		use: [
+			importIfExist(),
+			rupture(),
+			autoprefixer()
+		],
+		'include css': true,
+		define: {
+			// dev-mode variable for using in stylus
+			'__DEV__': isDebug
+		}
+	}))
+	.pipe(gulpIf(!isDebug, gcmq()))
+	.pipe(gulpIf(!isDebug, nano({
+		zindex: false
+	})))
+	.pipe(rename({
+		suffix: '.min'
+	}))
+	.pipe(gulpIf(isDebug, sourcemaps.write()))
+	.pipe(gulp.dest('dist/assets/styles'))
 ));
 
 gulp.task('styles:lint', () => (
 	gulp.src(['app/**/*.styl', '!app/styles/**'])
-		.pipe(stylint({
-			reporter: 'stylint-stylish',
-			reporterOptions: {verbose: true}
-		}))
-		.pipe(stylint.reporter())
-		.pipe(stylint.reporter('fail', {failOnWarning: true}))
+	.pipe(stylint({
+		reporter: 'stylint-stylish',
+		reporterOptions: {
+			verbose: true
+		}
+	}))
+	.pipe(stylint.reporter())
+	.pipe(stylint.reporter('fail', {
+		failOnWarning: true
+	}))
 ));

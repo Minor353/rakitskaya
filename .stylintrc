@@ -1,0 +1,6 @@
+{
+	// do not specify reporter here
+	// because it breaks SublimeLinter-contrib-stylint
+	// use gulp task style:lint instead
+	
+}

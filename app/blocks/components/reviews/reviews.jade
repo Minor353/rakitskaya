@@ -3,19 +3,14 @@ mixin reviews(positionClass)
     .reviews_wrap
       h2.reviews_title Отзывы о нашем сервисе
       ul.reviews_slider
-        li.reviews_slider-item
-          .reviews_item-client
-            .reviews_client-avatar
-              img(src="images/ava.png", alt="ava")
-            .reviews_client-data
-              .reviews_data-name Max Morozov
-              .reviews_data-position 2gis
-          .reviews_item-text Посетил на днях этот замечательный салон, всем очень доволен, не помню имя мастера, но подстригли идеально, сервис также на высоте. Теперь только к Вам. Спасибо большое!
-        li.reviews_slider-item
-          .reviews_item-client
-            .reviews_client-avatar
-              img(src="images/ava.png", alt="ava")
-            .reviews_client-data
-              .reviews_data-name Анна
-              .reviews_data-position barb
-          .reviews_item-text Давно уже искала такой салон красоты, который будет включать большое разнообразие процедур. И я его нашла в Днепре. Здесь проводят косметологические процедуры, а еще можно поэкспериментировать со своим имиджем. Я делала в салоне татуаж бровей, девочки просто умнички, все сделано очень качественно, я довольна. Также всегда хожу подстригать волосы только в этот салон - все устраивает.
+        - var revList = ['Max', 'Lina', 'Maha', 'Linda', 'Misha', 'Ulya'];
+        each item in revList
+          li.reviews_slider-item
+            .reviews_slider-item-content
+              .reviews_item-client
+                .reviews_client-avatar
+                  img(src="images/ava.png", alt="ava")
+                .reviews_client-data
+                  .reviews_data-name #{item}
+                  .reviews_data-position 2gis
+              .reviews_item-text Посетил на днях этот замечательный салон, всем очень доволен, не помню имя мастера, но подстригли идеально, сервис также на высоте. Теперь только к Вам. Спасибо большое!
