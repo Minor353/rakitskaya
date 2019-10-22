@@ -1,14 +1,15 @@
-include ../icon/icon
+mixin social(positionClass)
+  include ../icon/icon
 
-.social
-  ul.social_list
-    li.social_list-item
-      a(href="#").social_item-link
-        .social_link-icon
-          +icon('facebook')
-        .social_link-text Facebook
-    li.social_list-item
-      a(href="#").social_item-link
-        .social_link-icon
-          +icon('instagram')
-        .social_link-text Instagram
+  .social(class="social social--#{positionClass}")
+    ul.social_list
+      li.social_list-item
+        a(href="#").social_item-link
+          .social_link-icon
+            +icon('facebook')
+          .social_link-text Facebook
+      li.social_list-item
+        a(href="#").social_item-link
+          .social_link-icon
+            +icon('instagram')
+          .social_link-text Instagram

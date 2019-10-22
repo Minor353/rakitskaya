@@ -1,6 +1,7 @@
 mixin prev-section(positionClass)
   div(class="prev-section prev-section--#{positionClass}")
     include ../social/social
+    +social('prev-section')
     .prev-section_slider
       img(src="images/main-slide.png", alt="slide").prev-section_slider-item
       img(src="images/main-slide_2.jpg", alt="slide").prev-section_slider-item
