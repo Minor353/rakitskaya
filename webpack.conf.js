@@ -5,7 +5,9 @@ import webpack from 'webpack';
 import NpmInstallPlugin from 'npm-install-webpack-plugin';
 import HappyPack from 'happypack';
 
-const eslintFormatter = ({notify}) => errors => {
+const eslintFormatter = ({
+	notify
+}) => errors => {
 	if (errors[0].messages) {
 		console.log(stylish(errors));
 		if (notify) {
@@ -26,7 +28,7 @@ export default function makeWebpackConfig({
 	sourcemaps = false,
 	debug = false,
 	notify = false,
-	eslint = true
+	eslint = false
 }) {
 	return {
 		entry: path.resolve('./app/scripts/app.js'),
@@ -84,16 +86,27 @@ export default function makeWebpackConfig({
 				__DEV__: JSON.stringify(process.env.NODE_ENV !== 'production')
 			})
 		].concat(debug ? [
-			new NpmInstallPlugin({saveDev: true})
+			new NpmInstallPlugin({
+				saveDev: true
+			})
 		] : [
 			new webpack.optimize.DedupePlugin(),
-			new webpack.optimize.UglifyJsPlugin({compress: {warnings: false}, output: {comments: false}})
+			new webpack.optimize.UglifyJsPlugin({
+				compress: {
+					warnings: false
+				},
+				output: {
+					comments: false
+				}
+			})
 		]),
 		eslint: {
 			configFile: path.join(__dirname, '.eslintrc'),
 			emitErrors: false,
 			emitWarning: true,
-			formatter: eslintFormatter({notify})
+			formatter: eslintFormatter({
+				notify
+			})
 		}
 	};
 }
