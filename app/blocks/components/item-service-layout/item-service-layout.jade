@@ -1,4 +1,5 @@
 mixin item-service-layout(positionClass)
+  include ../icon/icon
   section(class="item-service-layout item-service-layout--#{positionClass}")
     .item-service-layout_wrap
       .item-service-layout_description
@@ -8,28 +9,33 @@ mixin item-service-layout(positionClass)
           include ../button/button
           +button('red', 'Записаться', '#')
         .item-service-layout_description-img
-          img(src="#", alt="image")
-      .item-service-layout_card
-        .item-service-layout_card-img
-          img(src="#", alt="image")
-        .item-service-layout_card-content
-          .item-service-layout_content-header
-            .item-service-layout_content-tools Лазер Pico-light10
-            .item-service-layout_content-price от 600 грн
-          .item-service-layout_card-title Что это такое?
-          .item-service-layout_card-text SMAS представляет собой слой волокон эластина и коллагена, который покрывает мимические мышцы. Из-за возрастного уменьшения содержания коллагена кожа обвисает, и появляются морщины, опускаются веки, брови, происходит деформация овала лица, появляется второй подборок. Вполне естественно, что большинству такие внешние изменения не нравятся.
-      .item-service-layout_block
+          img(src="images/green-leaves.png", alt="image")
+      .category-item-card
+        .category-item-card_img
+          img(src="images/piling.png", alt="image")
+        .category-item-card_content
+          .category-item-card_content-wrap
+            .category-item-card_content-tools 
+              .category-item-card_tools-text Лазер Pico-light10
+              +icon('massager', true).category-item-card_tools-icon 
+            .category-item-card_content-price от 600 грн
+          .category-item-card_content-title Лазерный картбоновый пилинг
+          .category-item-card_content-text SMAS представляет собой слой волокон эластина и коллагена, который покрывает мимические мышцы. Из-за возрастного уменьшения содержания коллагена кожа обвисает, и появляются морщины, опускаются веки, брови, происходит деформация овала лица, появляется второй подборок. Вполне естественно, что большинству такие внешние изменения не нравятся.
+      .item-service-layout_block.item-service-layout_block--padding
         .item-service-layout_block-title Показания
         .item-service-layout_block-description SMAS представляет собой слой волокон эластина и коллагена, который покрывает мимические мышцы. Из-за возрастного уменьшения содержания коллагена кожа обвисает, и появляются морщины, опускаются веки, брови, происходит деформация овала лица, появляется второй подборок. Вполне естественно, что большинству такие внешние изменения не нравятся.
         ul.item-service-layout_list
           - for (var i = 0; i < 4; i++) {
-            li.item-service-layout_list-item SMAS представляет собой слой волокон эластина и коллагена
+            li.item-service-layout_list-item 
+              span SMAS представляет собой слой волокон эластина и коллагена
           - }
       .item-service-layout_block
         .item-service-layout_block-title Противопоказания
         .item-service-layout_block-description SMAS представляет собой слой волокон эластина и коллагена, который покрывает мимические мышцы. Из-за возрастного уменьшения содержания коллагена кожа обвисает, и появляются морщины, опускаются веки, брови, происходит деформация овала лица, появляется второй подборок. Вполне естественно, что большинству такие внешние изменения не нравятся.
         ul.item-service-layout_list
           - for (var x = 0; x < 4; x++) {
-            li.item-service-layout_list-item SMAS представляет собой слой волокон эластина и коллагена
+            li.item-service-layout_list-item 
+              span SMAS представляет собой слой волокон эластина и коллагена
           - }
-      +button('red', 'Записаться', '#')
+      .item-service-layout_btn
+        +button('red', 'Записаться', '#')

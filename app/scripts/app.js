@@ -10,6 +10,8 @@ import prevSection from '../blocks/components/prev-section/prev-section';
 prevSection();
 import share from '../blocks/components/share/share';
 share();
+import tabsTable from '../blocks/components/tabs-table/tabs-table';
+tabsTable();
 import reviews from '../blocks/components/reviews/reviews';
 reviews();
 

@@ -1,6 +1,11 @@
+include ../icon/icon
 .category-card
+  .category-card_decor
+    img(src="images/flower.png", alt="flower")
   .category-card_header
-    .category-card_icon
-    .category-card_tool Лазер Pico-light10
-  .category-card_info Омоложение лазером
-  a(href="#").category-card_btn Подробнее
+    +icon('reduce', true).category-card_icon
+    .category-card_tool 
+      .category-card_tool-text Лазер Pico-light10
+      +icon('massager', true).category-card_tool-icon
+  .category-card_info Удаление перманентного макияжа
+  a(href="category-item.html").category-card_btn Подробнее

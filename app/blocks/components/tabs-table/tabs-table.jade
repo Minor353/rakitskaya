@@ -4,8 +4,10 @@
       each item in tabsList
         li.tabs-table_tabs-item= item
   ul.tabs-table_content
-    li.tabs-table_content-item
-      include ../table-list/table-list
+    - for (var i = 0; i < 5; i++) {
+        li.tabs-table_content-item
+          include ../table-list/table-list
+    - }
   .tabs-table_btn
     include ../button/button
     +button('red', 'Забронировать', '#')

@@ -23,77 +23,10 @@
 .services-block_list
   display: flex
   justify-content: space-between
+  overflow-x: scroll
 
-.service-card_content
-  width: 270px
-  padding: 30px 15px
-  padding-top: 45px
-  box-sizing: border-box
-  margin: 0 auto
-  background-color: #FFFFFF
-  box-shadow: 0px 15px 35px rgba(50, 60, 88, 0.2)
-  position: relative
-  top: -50px 
+.services-block_list-item
+  margin-right: 20px
 
-.service-card_content-icon
-  position: relative
-  border: 1px solid #C6373B
-  margin-bottom: 45px
-
-.service-card_content-icon-wrap
-  position: absolute
-  top: -15px
-  left: 50%
-  transform: translateX(-50%)
-  background-color: #fff
-  padding: 0 25px
-
-.service-card_icon-svg
-  width: 30px
-  height: 30px
-
-.service-card_content-title
-  font-size: 24px
-  line-height: 29px
-  text-align: center
-  color: #333333;
-  margin-bottom: 8px
-
-.service-card_content-text
-  font-size: 14px
-  line-height: 145%
-  text-align: center
-  letter-spacing: -0.03em
-  color: #4F4F4F
-  padding: 0 25px
-  margin-bottom: 27px
-
-.service-card_content-link
-  font-size: 20px
-  line-height: 24px
-  letter-spacing: -0.03em
-  color: #C6373B
-  text-decoration: none
-  display: block
-  position: relative
-  &:after
-    content: ''
-    display: block
-    position: absolute
-    top: -2px
-    right: 0
-    width: 30px
-    height: 30px
-    border: 2px solid #C6373B
-    box-sizing: border-box
-  &:before
-    content: ''
-    display: block
-    position: absolute
-    transform: rotate(-45deg)
-    right: 12px
-    top: 9px
-    width: 8px
-    height: 8px
-    border-bottom: 1.3px solid #333333
-    border-right: 1.3px solid #333333
+.services-block_list-item:last-child
+  margin-right: 0

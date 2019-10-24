@@ -1,0 +1,100 @@
+.category-card
+  background-color: #fff
+  box-shadow: 0px 15px 35px rgba(50, 60, 88, 0.2)
+  padding: 10px 15px 30px 15px
+  width: 300px
+  min-height: 173px
+  box-sizing: border-box
+  display: flex
+  flex-wrap: wrap
+  position: relative
+  transition: 0.3s
+
+.category-card_decor
+  width: 150px
+  height: 162px
+  position: absolute 
+  z-index: 0
+  bottom: 0
+  right: 0
+  img 
+    width: 100%
+    height: 100%
+
+.category-card_header
+  display: flex
+  align-items: center
+  justify-content: space-between
+  margin-bottom: 10px
+  width: 100%
+  position: relative
+  z-index: 2 
+
+.category-card_icon
+  width: 30px
+  height: 30px
+
+.category-card_tool 
+  display: flex
+  align-items: center
+  padding: 5px 5px 5px 8px
+  background-color: #F4F4FA
+
+.category-card_tool-text
+  font-size: 12px
+  line-height: 14px
+  letter-spacing: -0.03em
+  color: #828282
+
+.category-card_tool-icon
+  width: 20px
+  height: 20px
+
+.category-card_info
+  font-size: 20px
+  line-height: 140%
+  text-align: center
+  color: #333333
+  transition: 0.3s
+
+.category-card_btn
+  align-self: flex-end
+  margin-top: 10px
+  text-decoration: none
+  font-size: 20px
+  line-height: 24px
+  letter-spacing: -0.03em
+  color: #C6373B
+  display: block
+  position: relative
+  width: 100%
+  &:after
+    content: ''
+    display: block
+    position: absolute
+    top: -2px
+    right: 0
+    width: 30px
+    height: 30px
+    border: 2px solid #C6373B
+    box-sizing: border-box
+  &:before
+    content: ''
+    display: block
+    position: absolute
+    transform: rotate(-45deg)
+    right: 12px
+    top: 9px
+    width: 8px
+    height: 8px
+    border-bottom: 1.3px solid #333333
+    border-right: 1.3px solid #333333
+    transition: 0.3s
+
+
+.category-card:hover
+  background-color:  #070B0C
+  .category-card_info
+    color: #fff
+  .category-card_btn:before
+    border-color: #fff

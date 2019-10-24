@@ -1,9 +1,12 @@
+include ../icon/icon
 .category-item-card
   .category-item-card_img
-    img(src="#", alt="image")
+    img(src="images/piling.png", alt="image")
   .category-item-card_content
-    .category-item-card_content-tools Лазер Pico-light10
+    .category-item-card_content-tools 
+      .category-item-card_tools-text Лазер Pico-light10
+      +icon('massager', true).category-item-card_tools-icon 
     .category-item-card_content-title Лазерный картбоновый пилинг
     .category-item-card_content-text SMAS представляет собой слой волокон эластина и коллагена, который покрывает мимические мышцы. Из-за возрастного уменьшения содержания коллагена кожа обвисает, и появляются морщины, опускаются веки, брови, происходит деформация овала лица, появляется второй подборок. Вполне естественно, что большинству такие внешние изменения не нравятся.
     include ../button/button
-    +button('white', 'Записаться', 'item-service.html')
+    +button('white', 'Подробнее', 'item-service.html')
