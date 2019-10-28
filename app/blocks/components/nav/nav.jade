@@ -1,5 +1,6 @@
 mixin nav(classMod)
   nav(class='nav nav--' + classMod)
+    include ../burger/burger
     ul.nav_list
       - var linkList = [{title: 'Главная', src: 'index.html'}, {title: 'Услуги', src: 'services.html'}, {title: 'О салоне', src: 'about.html'}, {title: 'Прайс', src: 'price.html'}, {title: 'Контакты', src: 'contact.html'}];
         each item in linkList
