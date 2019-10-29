@@ -5,12 +5,16 @@
   max-width: 1170px
   padding: 150px 15px
   margin: 0 auto
+  @media screen and (max-width: 480px)
+    padding: 100px 15px
 
 .about-main_content
   display: flex
   margin-bottom: 80px
   @media screen and (max-width: 1024px)
     flex-direction: column-reverse
+  @media screen and (max-width: 600px)
+    margin-bottom: 0
 
 .about-main_description-title
   font-size: 66px
@@ -23,6 +27,11 @@
   @media screen and (max-width: 768px)
     font-size: 50px
     line-height: 60px
+    margin-left: 0
+  @media screen and (max-width: 480px)
+    font-size: 30px
+    line-height: 40px
+    margin-bottom: 20px
 
 .about-main_description-text
   font-size: 20px
@@ -38,6 +47,9 @@
   @media screen and (max-width: 1024px)
     width: 90%
     margin: 0 auto
+  @media screen and (max-width: 480px)
+    height: auto
+    margin-bottom: 30px
   img 
     width: 100%
     height: 100%
@@ -81,6 +93,10 @@
     height: 190px
     border: 1px solid
     display: block
+    @media screen and (max-width: 600px)
+      width: 100%
+    @media screen and (max-width: 480px)
+      height: 150px
 
 .about-main_slider-next, .about-main_slider-prev
   width: 129px
@@ -96,6 +112,8 @@
   @media screen and (max-width: 1024px)
     opacity: 0
     pointer-events: none
+  @media screen and (max-width: 480px)
+    display: none
 
 .about-main_slider-prev
   left: -129px

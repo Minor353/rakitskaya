@@ -31,9 +31,18 @@ export default function reviews() {
 				}
 			},
 			{
+				breakpoint: 610,
+				settings: {
+					slidesToShow: 2,
+					slidesToScroll: 1
+				}
+			},
+			{
 				breakpoint: 480,
 				settings: {
-					slidesToShow: 1,
+					centerMode: true,
+					centerPadding: '19px',
+					slidesToShow: 2,
 					slidesToScroll: 1
 				}
 			}

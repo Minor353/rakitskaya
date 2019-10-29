@@ -22,7 +22,7 @@ export default function reviews() {
 				}
 			},
 			{
-				breakpoint: 480,
+				breakpoint: 610,
 				settings: {
 					slidesToShow: 1,
 					slidesToScroll: 1

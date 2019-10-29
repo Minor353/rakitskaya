@@ -8,6 +8,8 @@
   max-width: 1170px
   padding: 150px 15px
   margin: 0 auto
+  @media screen and (max-width: 480px)
+    padding: 100px 15px
 
 .main-form_title
   font-size: 66px
@@ -20,6 +22,10 @@
   @media screen and (max-width: 768px)
     font-size: 50px
     line-height: 60px
+  @media screen and (max-width: 480px)
+    font-size: 30px
+    line-height: 40px
+    margin-bottom: 20px
 
 .main-form_subtitle
   font-size: 20px
@@ -39,9 +45,14 @@
 
 .main-form_form-label:first-child
   width: 400px
+  @media screen and (max-width: 700px)
+    width: 100%
+    margin-bottom: 40px
 
 .main-form_form-label:nth-child(2)
   width: 300px
+  @media screen and (max-width: 600px)
+    width: 100%
 
 .main-form_label-text
   font-size: 16px

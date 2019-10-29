@@ -5,15 +5,14 @@ mixin contact-block(positionClass)
         h2.contact-block_title Оставайтесь на связи
         ul.contact-block_list
           li.contact-block_list-item
-            include ../icon/icon
-            +icon('phone-call', true).contact-block_list-item-icon
+            img(src="images/phone-call.svg", alt="icon").contact-block_list-item-icon
             a(href="tel:+").contact-block_item-link +38 068 097 86 84
             a(href="tel:+").contact-block_item-link +38 099 559 36 95
           li.contact-block_list-item
-            +icon('envelope', true).contact-block_list-item-icon
+            img(src="images/envelope.svg", alt="icon").contact-block_list-item-icon
             a(href="mailto:").contact-block_item-link info@rakitskaya.studio
           li.contact-block_list-item
-            +icon('placeholder', true).contact-block_list-item-icon
+            img(src="images/placeholder.svg", alt="icon").contact-block_list-item-icon
             a(href="#", target="_blank", rel="noopener noreferrer").contact-block_item-link Ул. Олеся Гончара, 6
       .contact-block_map
         .contact-block_map-content

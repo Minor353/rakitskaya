@@ -8,10 +8,15 @@
   margin: 0 auto
   position: relative
   display: flex 
+  @media screen and (max-width: 700px)
+    flex-direction: column
+    padding: 100px 15px
 
 .share_img
   width: 925px
   height: 600px
+  @media screen and (max-width: 700px)
+    display: none
   img 
     width: 100%
     height: 100%
@@ -30,6 +35,14 @@
     margin-left: 90px
     font-size: 50px
     line-height: 60px
+  @media screen and (max-width: 700px)
+    margin-left: 0
+    text-align: center
+    margin-bottom: 60px
+  @media screen and (max-width: 480px)
+    font-size: 30px
+    line-height: 40px
+    margin-bottom: 20px
 
 .share_slider-wrap
   position: absolute
@@ -38,6 +51,9 @@
   right: 0
   top: 439px
   z-index: 3
+  @media screen and (max-width: 700px)
+    position: static
+    width: 100%
 
 .share_slider-arrow-wrap
   position: absolute
@@ -48,6 +64,8 @@
   right: -380px
   @media screen and (max-width: 1400px)
     right: -190px
+  @media screen and (max-width: 700px)
+    display: none
 
 .share_slider
   background-color: #e5e5e5
@@ -58,18 +76,24 @@
   box-shadow: 0px 15px 35px rgba(50, 60, 88, 0.2)
   position: absolute
   bottom: -120px
-  right: 0
   cursor: pointer
   background-color: #fff
+  
+
+.share_slider-next
+  right: 0
   @media screen and (max-width: 1400px)
     right: 210px
-
+  @media screen and (max-width: 480px)
+    right: 0
 .share_slider-prev
   right: 129px
   border-right: 1px solid 
   border-color: #323c5826
   @media screen and (max-width: 1400px)
     right: 340px
+  @media screen and (max-width: 480px)
+    left: 0
 
 .share_slider-next:after, .share_slider-prev:after
   content: '';
@@ -95,6 +119,9 @@
   width: 670px
   height: 450px
   box-shadow: 0px 15px 35px rgba(50, 60, 88, 0.2)
+  @media screen and (max-width: 700px)
+    width: 100%
+    height: auto
   img 
     width: 100%
     height: 100%

@@ -3,12 +3,18 @@
   align-items: center
   @media screen and (max-width: 1024px)
     justify-content: center
+  @media screen and (max-width: 480px)
+    flex-direction: column
 
 .advantages-card_content
   max-width: 570px
   padding-left: 60px
   @media screen and (max-width: 1024px)
     max-width: 70%
+  @media screen and (max-width: 480px)
+    max-width: 100%
+    padding-left: 0
+    text-align: center
 
 .advantages-card_content-title
   font-size: 34px
@@ -24,3 +30,5 @@
 .advantages-card_icon
   width: 80px
   height: 80px
+  @media screen and (max-width: 480px)
+    margin-bottom: 30px
