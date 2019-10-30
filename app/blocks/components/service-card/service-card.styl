@@ -57,6 +57,7 @@
 .service-card_content-link
   font-size: 20px
   line-height: 24px
+  font-weight: 600
   letter-spacing: -0.03em
   color: #C6373B
   text-decoration: none
@@ -72,6 +73,7 @@
     height: 30px
     border: 2px solid #C6373B
     box-sizing: border-box
+    transition: 0.3s
   &:before
     content: ''
     display: block
@@ -83,3 +85,7 @@
     height: 8px
     border-bottom: 1.3px solid #333333
     border-right: 1.3px solid #333333
+
+.service-card_content-link:hover
+  &:after
+    width: 245px

@@ -7,7 +7,7 @@ mixin item-service-layout(positionClass)
           h2.item-service-layout_description-title Омоложение пикосекундным лазером Pico-light10
           .item-service-layout_description-text Современная бесконтактная методика коррекция возрастных изменений кожи и морщин
           include ../button/button
-          +button('red', 'Записаться', '#')
+          +button('red', 'Записаться', '#', 'js-form-popup')
         .item-service-layout_description-img
           img(src="images/green-leaves.png", alt="image")
       .category-item-card
@@ -38,4 +38,4 @@ mixin item-service-layout(positionClass)
               span SMAS представляет собой слой волокон эластина и коллагена
           - }
       .item-service-layout_btn
-        +button('red', 'Записаться', '#')
+        +button('red', 'Записаться', '#', 'js-form-popup')

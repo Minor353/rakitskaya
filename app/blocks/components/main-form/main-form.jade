@@ -6,8 +6,8 @@ mixin main-form(positionClass)
       form(action="#", method="post").main-form_form
         label.main-form_form-label
           .main-form_label-text Как к Вам можно обращаться
-          input(type="text" placeholder="Ваше имя").main-form_form-input
+          input(type="text" placeholder="Ваше имя" pattern="^[А-Яа-яЁё\s]+$" required).main-form_form-input
         label.main-form_form-label
           .main-form_label-text Оставьте свой номер телефона для связи
-          input(type="text" placeholder="+380 (__) ___ __ __").main-form_form-input
+          input(type="text" placeholder="+380 (__) ___ __ __" required).main-form_form-input#phone-input
         button(type="submit").main-form_btn Отправить

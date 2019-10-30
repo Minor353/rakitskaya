@@ -6,6 +6,8 @@ import header from '../blocks/components/header/header';
 header();
 import nav from '../blocks/components/nav/nav';
 nav();
+import popupForm from '../blocks/components/popup-form/popup-form';
+popupForm();
 import aboutMain from '../blocks/components/about-main/about-main';
 aboutMain();
 import prevSection from '../blocks/components/prev-section/prev-section';

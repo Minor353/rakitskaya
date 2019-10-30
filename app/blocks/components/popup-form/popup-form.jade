@@ -1,0 +1,19 @@
+.popup-form
+  .popup-form_content
+    .popup-form_content-cross
+    .popup-form_success
+      .popup-form_success-content
+        .popup-form_success-title Успешно отправлено
+        .popup-form_success-subtitle Мы перезвоним Вам в ближайшее время
+    .popup-form_content-img
+      img(src="images/bg_parallaxs_form.png", alt="leaf")
+    h2.main-form_title запишитесь сейчас
+    .main-form_subtitle Мы перезвоним Вам в ближайшее время
+    form(action="popupMail.php", method="post").main-form_form#popupForm
+      label.main-form_form-label
+        .main-form_label-text Как к Вам можно обращаться
+        input(type="text" placeholder="Ваше имя" pattern="^[А-Яа-яЁё\s]+$" required).main-form_form-input
+      label.main-form_form-label
+        .main-form_label-text Оставьте свой номер телефона для связи
+        input(type="text" placeholder="+380 (__) ___ __ __"  required).main-form_form-input#phone-input
+      button(type="submit").main-form_btn Отправить

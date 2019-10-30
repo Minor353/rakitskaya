@@ -11,6 +11,8 @@
   @media screen and (max-width: 700px)
     flex-direction: column
     padding: 100px 15px
+  @media screen and (max-width: 480px)
+    padding-bottom: 0
 
 .share_img
   width: 925px
@@ -43,6 +45,7 @@
     font-size: 30px
     line-height: 40px
     margin-bottom: 20px
+    margin-top: 0
 
 .share_slider-wrap
   position: absolute
@@ -78,6 +81,9 @@
   bottom: -120px
   cursor: pointer
   background-color: #fff
+  transition: 0.3s
+  &:hover
+    background-color: #f3f2f2
   
 
 .share_slider-next
